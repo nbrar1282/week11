@@ -1,20 +1,60 @@
-// function greet(user){
-//     console.log(`Hello ${user}`)
+// // function greet(user){
+// //     console.log(`Hello ${user}`)
+// // }
+
+// // greet("nav")
+
+
+// // let greet = function(user) {
+// //              console.log(`hello ${user}`)
+
+// // }
+
+// // greet("nav")
+
+
+// // let greet = (user, time="day") => {
+// //     console.log(`good ${time} ${user}`)
+// // };
+
+// // greet("nav")
+
+// const enteredValue = prompt("Enter a value");
+   
+// function calculatearea(radius){
+//     if(isNaN(radius)){
+//         resultpara
+//         // alert('invalid entry')
+// }
+//     else{
+//         const radiuspara = document.querySelector("#radius")
+//         console.log(radiuspara)
+//         radiuspara.textContent += enteredValue
+//         const area = Math.PI*radius*radius;
+//         return area.toFixed(2)
+//     }
 // }
 
-// greet("nav")
 
 
-// let greet = function(user) {
-//              console.log(`hello ${user}`)
 
+// let result = calculatearea(enteredValue)
+// if (result){
+//     const resultpara = document.querySelector("#result")
+//     resultpara.textContent =`the result is ${result}`
 // }
+let shoppingList = ['bread', 'cheese', 'green pepper']
 
-// greet("nav")
+function populatelist(myshoppinglist){
+    shopping = document.querySelector('.shopping')
+    
+    for(item of myshoppinglist){
+      let new1 = document.createElement("li")
+      new1.textContent = item
+      shopping.appendChild(new1)
+        
+    }
 
+}
 
-let greet = (user) => {
-    console.log(`hello ${user}`)
-};
-
-greet("nav")
+populatelist(shoppingList)
