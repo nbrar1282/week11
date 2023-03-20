@@ -47,7 +47,7 @@ let shoppingList = ['bread', 'cheese', 'green pepper']
 
 function populatelist(myshoppinglist){
     shopping = document.querySelector('.shopping')
-    
+
     for(item of myshoppinglist){
       let new1 = document.createElement("li")
       new1.textContent = item
@@ -58,3 +58,13 @@ function populatelist(myshoppinglist){
 }
 
 populatelist(shoppingList)
+
+
+function squareList(){
+    const squarelist =document.querySelector("ul")
+   squarelist.classList.remove("circleList")
+   squarelist.classList.add("squareList")
+
+}
+
+squareList()
