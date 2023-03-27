@@ -68,3 +68,13 @@ function squareList(){
 }
 
 squareList()
+
+function updateImage(){
+  const image = document.querySelector("#shoppingCart");
+  image.setAttribute("alt", "IMage of my object");
+  image.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/263/263142.png");
+  image.setAttribute("width", "50");
+  image.setAttribute("height", "50");
+};
+
+updateImage()
