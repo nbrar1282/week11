@@ -78,3 +78,19 @@ function updateImage(){
 };
 
 updateImage()
+
+function changeListGreen(){
+ const li = document.querySelectorAll("li");
+ for (const element of li) {
+     if (element.textContent.includes("green")) {
+      element.classList.add("green")
+      
+      
+     } 
+    
+  
+ }
+
+}
+
+changeListGreen()
